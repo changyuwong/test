@@ -1,7 +1,7 @@
 CREATE TABLE principal(
-    id BIGINT,
-    email TEXT,
+    idd BIGINT,
+    emaill TEXT,
     created_ts BIGINT NOT NULL DEFAULT (extract(epoch from now()))
 );
 
-CREATE INDEX principal_email on principal(email);
+CREATE INDEX principal_email on principal(emaill);
